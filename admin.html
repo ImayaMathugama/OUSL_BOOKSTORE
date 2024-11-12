@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUSLBookStore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header1">
+        <a href="registration.html">Register</a>
+        <a href="login2.html">Log In</a>
+        <a href="admin.html">Admin View</a>
+
+    </header>
+    
+    <section id="loginA" class="content-section">
+        <h2>Login to Admin View</h2>
+        <form class="loginAForm"id="loginAForm" onsubmit="loginAdmin(event)">
+            <label for="username">Userame:</label>
+            <input type="text" id="username" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="passwordA" required><br><br>
+
+            <button type="submit">Login</button>
+
+        </form>
+    </section>
+
+     <!-- Admin Content Section (Initially Hidden) -->
+     <section id="adminView" class="content-section" style="display: none;">
+        <h2>Admin - Manage Books</h2>
+            <form id="adminForm" onsubmit="addBook(event)">
+                <label for="title">Title:</label>
+                <input type="text" id="title" required>
+                <label for="author">Author:</label>
+                <input type="text" id="author" required>
+                <label for="genre">Genre:</label>
+                <select name="genre" id="genre">
+                    <option >Fantasy</option>
+                    <option >Novel</option>
+                    <option >Fictional</option>
+                    <option >Poetry</option>
+                    <option >Short Story</option>
+                    <option >Non-Finctional</option>
+                    <option >Education</option>
+                    <option >Adventure</option>
+                </select>
+                <label for="price">Price:</label>
+                <input type="number" id="price" required placeholder="Rs">
+                <button type="submit">Add Book</button>
+            </form>
+            <div class="bookList">
+                <h3>Book List</h3>
+                <div  id="bookList"> 
+
+                </div>   
+            </div>
+
+            
+              
+
+            
+        
+        
+
+    </section>
+
+      
+    
+    <script src="script2.js"></script>
+</body>
+</html>

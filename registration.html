@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUSLBookStore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header1">
+        <a href="registration.html">Register</a>
+        <a href="login2.html">Log In</a>
+        <a href="admin.html">Admin View</a>
+
+    </header>
+    
+    <section id="register" class="content-section">
+        <h2>Registration</h2>
+        <form class="registerForm"id="registerForm" onsubmit="registerUser(event)">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" required><br><br>
+
+            <button type="submit">Register</button>
+            
+
+        </form>
+    </section>
+    
+    <!-- Section to display registered users -->
+    <section id="userList" class="content-section">
+        <h2>Registered Users</h2>
+        <div id="userDisplay"></div>
+    </section>
+      
+
+    <script src="script2.js"></script>
+</body>
+</html>

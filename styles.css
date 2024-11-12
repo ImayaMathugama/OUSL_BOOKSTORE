@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    background-image: url("book.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+h1{
+    text-align: center;
+    font-size: 120px;
+}
+.header1{
+    background-color: black;
+    
+    font-size: large;
+    display: flex;
+    height: 50px;
+
+}
+
+a:link{
+    color: bisque;
+    margin: auto;
+    text-decoration: none;
+} 
+a:visited{
+    color:rgb(224, 177, 114);
+}
+a:hover{
+    color:antiquewhite;
+} 
+
+.content-section{
+    
+    text-align: center;
+}
+
+.registerForm{
+    text-align: justify;
+    margin: auto;
+    margin-top: 30px;
+    background-color: antiquewhite;
+    height: max-content;
+    width: 20%;
+    padding: 30px;
+}
+
+.bookList{
+    background-color: beige;
+    margin: 15px;
+    padding: 5px;
+}
+.search-section{
+    background-color: beige;
+    margin: 15px;
+    padding: 10px;
+    text-align: justify;
+}
+.cart-section{
+    background-color: bisque;
+    margin: 15px;
+    padding: 10px;
+}

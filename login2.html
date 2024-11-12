@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUSLBookStore</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header1">
+        <a href="registration.html">Register</a>
+        <a href="login.html">Log In</a>
+        <a href="admin.html">Admin View</a>
+
+    </header>
+    
+    <section id="login" class="content-section">
+        <h2>Log In</h2>
+        <form class="loginForm"id="loginForm" onsubmit="loginUser(event)">
+            
+            <label for="email">Email:</label>
+            <input type="email" id="lemail" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="lpassword" required><br><br>
+
+            
+            <button type="login">Login</button>
+
+        </form>
+    </section>
+
+
+    <!-- Book Search Section -->
+    <section id="search" class="search-section" style="display: none;">
+        <h2>Search Books</h2>
+        <input type="text" id="searchInput" placeholder="Search by title, author, or genre" oninput="searchBooks()">
+        <div id="bookList1"></div>
+    </section>
+
+    <!-- Shopping Cart Section -->
+    <section id="cart" class="cart-section" style="display: none;">
+        <h2>Shopping Cart</h2>
+        <div id="cartList"></div>
+        <p>Total: $<span id="cartTotal">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+    
+    
+      
+
+    <script src="script2.js"></script>
+</body>
+</html>
